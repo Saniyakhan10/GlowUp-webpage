@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(252, 223, 228);
+        }
+        
+        nav {
+            background-color: rgb(252, 223, 228);
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+        
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .pp {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .pp #p1 {
+            color: black;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+            position: relative;
+            top: 1px;
+        }
+        
+        .pp #p2 {
+            color: rgb(172, 160, 160);
+            font-size: 13px;
+            position: relative;
+            top: 2px;
+        }
+        
+        .left img {
+            height: 80px;
+            padding: 10px;
+            border: 2px solid pink;
+            border: none;
+            border-radius: 25px;
+        }
+        
+        .right {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .right a {
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            color: rgb(172, 160, 160);
+        }
+        
+        .parent {
+            display: flex;
+        }
+        
+        .product {
+            background-color: rgb(248, 236, 236);
+            width: 450px;
+            height: 730px;
+            position: relative;
+            left: 20%;
+            top: 25px;
+            border-radius: 15px;
+            /* overflow: hidden; */
+        }
+        
+        .product img {
+            width: 400px;
+            height: 450px;
+            padding: 5px;
+            position: relative;
+            left: 25px;
+            top: 30px;
+            border-radius: 30px;
+        }
+        
+        .product p {
+            position: relative;
+            top: 32px;
+            left: 10px;
+            padding: 0px 20px;
+        }
+        
+        #p3 {
+            font-size: 24px;
+        }
+        
+        #p4 {
+            position: relative;
+            top: 33px;
+            left: 10px;
+            font-size: 20px;
+            color: red;
+        }
+        
+        #p5 {
+            position: relative;
+            top: 39px;
+            left: 10px;
+            color: rgb(118, 117, 117);
+        }
+        
+        .color {
+            position: relative;
+            top: 52px;
+            left: 25px;
+            font-size: 35px;
+        }
+        
+        .button1 {
+            position: relative;
+            left: 30px;
+            top: 65px;
+            padding: 11px 20px;
+            font-size: 15px;
+            background-color: rgb(242, 39, 73);
+            border-radius: 14px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .button2 {
+            position: relative;
+            left: 35px;
+            top: 65px;
+            padding: 10px 15px;
+            font-size: 15px;
+            /* background-color: rgb(239, 165, 177); */
+            border-radius: 14px;
+            border: none;
+            color: rgb(241, 100, 123);
+            font-weight: bold;
+            background: none;
+            border: 2px solid rgb(241, 100, 123);
+            cursor: pointer;
+        }
+        
+        .sidebar {
+            background-color: rgb(248, 236, 236);
+            width: 520px;
+            height: 280px;
+            position: relative;
+            left: 22%;
+            top: 230px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        
+        .sidebar h2 {
+            position: relative;
+            left: 15px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+        .hh {
+            position: relative;
+            top: 15px;
+        }
+        
+        .hhh {
+            position: relative;
+            top: 35px;
+        }
+        
+        .hhhh {
+            position: relative;
+            top: 48px;
+        }
+        
+        li {
+            position: relative;
+            top: 20px;
+            left: 40px;
+            color: rgb(122, 113, 113);
+        }
+        
+        .p8 {
+            padding-left: 20px;
+            position: relative;
+            top: 54px;
+            left: 4px;
+            color: rgb(122, 113, 113);
+        }
+        
+        .sidebar .p7 {
+            padding-left: 20px;
+            position: relative;
+            top: 40px;
+            left: 4px;
+            color: rgb(122, 113, 113);
+        }
+        
+        .parent3 {
+            display: flex;
+        }
+        
+        .part1 {
+            background-color: rgb(248, 236, 236);
+            width: 450px;
+            height: 90px;
+            position: relative;
+            left: 20%;
+            top: 30px;
+            border-radius: 15px;
+        }
+        
+        .part2 {
+            background-color: rgb(248, 236, 236);
+            width: 450px;
+            height: 90px;
+            position: relative;
+            left: 21%;
+            top: 30px;
+            border-radius: 15px;
+        }
+        
+        .heading1 {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            font-size: 22px;
+        }
+        
+        .heading2 {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            font-size: 22px;
+        }
+        
+        .head1 {
+            position: relative;
+            top: 15px;
+            left: 10px;
+            color: rgb(122, 113, 113);
+            font-size: 17px;
+        }
+        
+        .head2 {
+            position: relative;
+            top: 14px;
+            left: 10px;
+            color: rgb(122, 113, 113);
+            font-size: 17px;
+        }
+        
+        .head3 {
+            position: relative;
+            top: 16px;
+            left: 10px;
+            color: rgb(122, 113, 113);
+            font-size: 17px;
+        }
+        
+        footer {
+            background-color: rgb(252, 223, 228);
+            height: 70px;
+            position: relative;
+            top: 30px;
+            margin-top: 10px;
+        }
+        
+        footer p {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 30px;
+            color: rgb(122, 113, 113);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5hBerXNZMrBvuoQoqLd1LJkBYQbN-a4mww&s" alt="logo">
+            <div class="pp">
+                <p id="p1">GlowUp</p>
+                <p id="p2">Nature look,blod you</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="https://www.amazon.in/Powerplay-Lipstick-Lightweight-Smudgeproof-Hydrates/dp/B08N84X9TJ/ref=sr_1_1_sspa?crid=3PIGD5MHQG9JB&dib=eyJ2IjoiMSJ9.kpipymY4f1Q1X1MhD0TbhAW0AGZt8KPwVstoKKDUFZ5d63bwgv19dHXD5hSw0Yy1aLJaa4kCf1GBgPzp3ftKe93NdHivefsGPiCY9JftrjXD-P5xh9r3mphMFmjPo6K7jDasA8m0Fcp1M4smmBuRB6QigoDHS907lTmHnMVu6aQ44zfhkCi2sWuGG9JPgzx3ehPfkGdCS5uomlDH25SSxCykrf8hppPfO-LHGBquhkeMr2_G71AlcKzyv4vH6X4qfDy08jo9pX9J8xnC4pNGRMN-BdRLOB0m2R0z-l065Rs.HGsXy6JRkqzOrH97FqqNCkY0H3VEC0TxHqcZXU91McQ&dib_tag=se&keywords=lipstick+combo+set&qid=1761581613&sprefix=%2Caps%2C942&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank">Product</a>
+            <a href="https://www.amazon.in/Powerplay-Lipstick-Lightweight-Smudgeproof-Hydrates/dp/B0CLRDTD3H/ref=sr_1_1_sspa?crid=3PIGD5MHQG9JB&dib=eyJ2IjoiMSJ9.kpipymY4f1Q1X1MhD0TbhAW0AGZt8KPwVstoKKDUFZ5d63bwgv19dHXD5hSw0Yy1aLJaa4kCf1GBgPzp3ftKe93NdHivefsGPiCY9JftrjXD-P5xh9r3mphMFmjPo6K7jDasA8m0Fcp1M4smmBuRB6QigoDHS907lTmHnMVu6aQ44zfhkCi2sWuGG9JPgzx3ehPfkGdCS5uomlDH25SSxCykrf8hppPfO-LHGBquhkeMr2_G71AlcKzyv4vH6X4qfDy08jo9pX9J8xnC4pNGRMN-BdRLOB0m2R0z-l065Rs.HGsXy6JRkqzOrH97FqqNCkY0H3VEC0TxHqcZXU91McQ&dib_tag=se&keywords=lipstick%2Bcombo%2Bset&qid=1761581613&sprefix=%2Caps%2C942&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                target="_blank">Shades</a>
+            <a href="https://www.amazon.in/Powerplay-Lipstick-Lightweight-Smudgeproof-Hydrates/dp/B0CLRDTD3H/ref=sr_1_1_sspa?crid=3PIGD5MHQG9JB&dib=eyJ2IjoiMSJ9.kpipymY4f1Q1X1MhD0TbhAW0AGZt8KPwVstoKKDUFZ5d63bwgv19dHXD5hSw0Yy1aLJaa4kCf1GBgPzp3ftKe93NdHivefsGPiCY9JftrjXD-P5xh9r3mphMFmjPo6K7jDasA8m0Fcp1M4smmBuRB6QigoDHS907lTmHnMVu6aQ44zfhkCi2sWuGG9JPgzx3ehPfkGdCS5uomlDH25SSxCykrf8hppPfO-LHGBquhkeMr2_G71AlcKzyv4vH6X4qfDy08jo9pX9J8xnC4pNGRMN-BdRLOB0m2R0z-l065Rs.HGsXy6JRkqzOrH97FqqNCkY0H3VEC0TxHqcZXU91McQ&dib_tag=se&keywords=lipstick%2Bcombo%2Bset&qid=1761581613&sprefix=%2Caps%2C942&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                target="_blank">Reviews</a>
+        </div>
+    </nav>
+    <div class="parent">
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51Zh4VQKyaL._SX522_.jpg" alt="img">
+            <p id="p3">GlowUp Stain Lipstick</p>
+            <p id="p4">&#8377 383</p>
+            <p id="p5">LAKMÉ Powerplay Priming Smooth Matte Finish Lightweight Lipstick, Smudgeproof, Lasts 16hrs, Hydrates Lips, Blushing Nude, 3.6g</p>
+            <div class="color">
+                <i class="fa-solid fa-circle" style="color:rgb(250, 170, 183);"></i>
+                <i class="fa-solid fa-circle" style="color: rgb(224, 103, 123);"></i>
+                <i class="fa-solid fa-circle" style="color: rgb(170, 43, 64);"></i>
+                <i class="fa-solid fa-circle" style="color: rgb(119, 23, 39);"></i>
+            </div>
+            <a href="https://www.amazon.in/Powerplay-Lipstick-Lightweight-Smudgeproof-Hydrates/dp/B08N84X9TJ/ref=sr_1_1_sspa?crid=3PIGD5MHQG9JB&dib=eyJ2IjoiMSJ9.kpipymY4f1Q1X1MhD0TbhAW0AGZt8KPwVstoKKDUFZ5d63bwgv19dHXD5hSw0Yy1aLJaa4kCf1GBgPzp3ftKe93NdHivefsGPiCY9JftrjXD-P5xh9r3mphMFmjPo6K7jDasA8m0Fcp1M4smmBuRB6QigoDHS907lTmHnMVu6aQ44zfhkCi2sWuGG9JPgzx3ehPfkGdCS5uomlDH25SSxCykrf8hppPfO-LHGBquhkeMr2_G71AlcKzyv4vH6X4qfDy08jo9pX9J8xnC4pNGRMN-BdRLOB0m2R0z-l065Rs.HGsXy6JRkqzOrH97FqqNCkY0H3VEC0TxHqcZXU91McQ&dib_tag=se&keywords=lipstick+combo+set&qid=1761581613&sprefix=%2Caps%2C942&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank">
+                <button class="button1">Buy Now</button>
+            </a>
+            <button class="button2">Add to Wishlist</button>
+        </div>
+
+        <div class="sidebar">
+            <h2 class="hh">Why choose this?</h2>
+            <ul>
+                <li>Long-Lasting -- Lasts up to 16 hours</li>
+                <li>Smooth & Lightweight -- Smooth & lightweight matte finish</li>
+                <li>Hydrating & Smudge-Proof -- Hydrates lips, smudge-proof</li>
+            </ul>
+            <h2 class="hhh">How to use</h2>
+            <p class="p7">Moisturize lips, then apply evenly from center to corners.You can use a lip liner for a neat look.</p>
+            <h2 class="hhhh">Ingredients</h2>
+            <p class="p8">Vitamin E, Shea Butter, Primer Essence.</p>
+        </div>
+    </div>
+    <div class="parent3">
+        <div class="part1">
+            <h2 class="heading1">Fast Delivery</h2>
+            <p class="head1">Same-day shipping in select cities. Easy returns within 7 days.</p>
+        </div>
+
+        <div class="part2">
+            <h2 class="heading2">Customer Reviews</h2>
+            <p class="head2">"Color is beautiful and stays all day!" --- Aisha</p>
+            <p class="head3">"Soft on lips, not drying" ---Meera</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy 2025 GlowUp</p>
+    </footer>
+
+</body>
+
+</html>
